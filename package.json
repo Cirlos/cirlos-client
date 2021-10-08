@@ -1,0 +1,19 @@
+{
+	"name": "cirlos-client",
+	"author": "Metalloriff",
+	"version": "2.0.0",
+	"description": "The Electron desktop client for Cirlos.",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"keywords": [],
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^15.1.2"
+	},
+	"dependencies": {
+		"electron-store": "^8.0.1",
+		"lodash": "^4.17.21"
+	}
+}
