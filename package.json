@@ -5,15 +5,32 @@
 	"description": "The Electron desktop client for Cirlos.",
 	"main": "src/main.js",
 	"scripts": {
-		"start": "electron ."
+		"start": "electron .",
+		"build": "electron-builder --win --x64"
 	},
+	"Files": [
+		"assets/*"
+	],
 	"keywords": [],
 	"license": "ISC",
-	"devDependencies": {
-		"electron": "^15.1.2"
-	},
 	"dependencies": {
 		"electron-store": "^8.0.1",
 		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"electron": "^15.1.2",
+		"electron-builder": "^22.11.7",
+		"electron-forge": "^5.2.4",
+		"electron-packager": "^15.4.0"
+	},
+	"build": {
+		"appId": "metalloriff.cirlos.client",
+		"productName": "Cirlos",
+		"copyright": "Copyright 2021 ${author}",
+		"win": {
+			"target": "nsis",
+			"artifactName": "installer-win.exe",
+			"icon": "assets/icon.ico"
+		}
 	}
 }

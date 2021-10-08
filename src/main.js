@@ -8,7 +8,7 @@ async function init() {
 	window = new BrowserWindow({
 		// Define main properties
 		title: "Cirlos",
-		icon: path.join(__dirname, "build", "icon.png"),
+		icon: path.join(__dirname, "assets", "icon.png"),
 		alwaysOnTop: config.get("alwaysOnTop"),
 
 		// Define sizes
